@@ -3,6 +3,8 @@
 @bian-ju:20px;//边距大小
 @background:#000;//背景
 @font-color:#5B9ADF;//字体颜色
+@nav-width:200px;//底部导航宽度
+@nav-height:40px;//底部导航高度
 .main{
 	width: 100%;
 	height: 100%;
@@ -33,10 +35,10 @@
 	margin: @bian-ju;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding: @bian-ju 0;
 	display: flex;
+	flex-direction: column;
 	align-items: flex-start;
-	justify-content: center;
+	justify-content: flex-start;
 	overflow-x: hidden;
 	overflow-y: auto;
 }
@@ -49,6 +51,11 @@
 	margin-top: 0;
 	padding: @bian-ju 0;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.nav{
+	width: @nav-width;
+	height: @nav-height;
 }
